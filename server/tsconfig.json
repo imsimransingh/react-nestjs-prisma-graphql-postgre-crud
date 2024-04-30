@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "target": "ES2021", // Corrected the typo by removing the stray backtick
+    "module": "commonjs", // CommonJS is suitable for Node.js
+    // "rootDir": "./src",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true, // Helps in debugging; generates corresponding '.map' file
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false, // Disables strict null checks for TypeScript
+    "noImplicitAny": false, // Allows implicit 'any' types
+    "strictBindCallApply": false, // Disables strict checking of function calls
+    "noFallthroughCasesInSwitch": false // Allows fall through in switch statements
+  },
+  "include": [
+    "src/**/*" // Include all files in the src directory
+  ],
+  "exclude": [
+    "node_modules", // Don't include node_modules in the compilation context
+    "dist" // Exclude the dist directory to avoid recompiling it
+  ]
+}
+
+
+// {
+//   "compilerOptions": {
+//     "module": "commonjs",
+//     "declaration": true,
+//     "removeComments": true,
+//     "emitDecoratorMetadata": true,
+//     "experimentalDecorators": true,
+//     "allowSyntheticDefaultImports": true,
+//     "target": "ES2021",
+//     "sourceMap": true,
+//     "outDir": "./dist",
+//     "baseUrl": "./",
+//     "incremental": true,
+//     "skipLibCheck": true,
+//     "strictNullChecks": false,
+//     "noImplicitAny": false,
+//     "strictBindCallApply": false,
+//     "forceConsistentCasingInFileNames": false,
+//     "noFallthroughCasesInSwitch": false
+//   }
+// }
